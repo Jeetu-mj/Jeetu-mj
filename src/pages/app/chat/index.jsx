@@ -24,7 +24,7 @@ const ChatPage = () => {
   return (
     <div className="flex lg:space-x-5 chat-height overflow-hidden relative rtl:space-x-reverse">
       <div
-        className={`transition-all duration-150 flex-none min-w-[260px] 
+        className={`transition-all duration-150 flex-none min-w-[260px]
         ${
           width < breakpoints.lg
             ? "absolute h-full top-0 md:w-[260px] w-[200px] z-[999]"

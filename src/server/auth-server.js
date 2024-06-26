@@ -3,6 +3,7 @@ const authServerConfig = (server) => {
     "/register",
     (schema, request) => {
       const requestData = JSON.parse(request.requestBody);
+
       const { email, password } = requestData;
 
       // Check if the email already exists
@@ -33,6 +34,7 @@ const authServerConfig = (server) => {
     "/",
     (schema, request) => {
       const requestData = JSON.parse(request.requestBody);
+      console.log(requestData);
       const { email, password } = requestData;
 
       // Find the user by email

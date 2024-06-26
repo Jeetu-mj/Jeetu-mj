@@ -1,3 +1,4 @@
+import "/src/assets/css/icomoon.css";
 export const menuItems = [
   {
     isHeadr: true,
@@ -32,13 +33,358 @@ export const menuItems = [
       },
     ],
   },
+  // {
+  //   title: "changelog",
+  //   icon: "heroicons:arrow-trending-up",
+  //   link: "changelog",
+  //   isHide: false,
+  //   badge: "1.0.0",
+  // },
   {
-    title: "changelog",
-    icon: "heroicons:arrow-trending-up",
-    link: "changelog",
-    isHide: false,
-    badge: "1.0.0",
+    isHeadr: true,
+    title: "Content system",
   },
+  {
+    title: "Medi Update",
+    className: "icon-mj-update",
+    link: "mediupdate",
+    child: [
+      {
+        childtitle: "Homepage",
+        childlink: "homepage",
+      },
+
+      {
+        childtitle: "About Page",
+        childlink: "aboutpage",
+      },
+      {
+        childtitle: "Job Post",
+        childlink: "jobpost",
+      },
+      {
+        childtitle: "Manage Job",
+        childlink: "managejob",
+      },
+      {
+        childtitle: "Medi Listing-nugget",
+        childlink: "medilisting-nugget",
+      },
+      {
+        childtitle: "Medi Review",
+        childlink: "medireview",
+      },
+      {
+        childtitle: "Intern certificate",
+        childlink: "interncertificate",
+      },
+    ],
+  },
+
+  {
+    title: "College",
+    className: "icon-mj-Private_Building ",
+    link: "college",
+    child: [
+      {
+        childtitle: "Add college",
+        childlink: "addcollege",
+      },
+
+      {
+        childtitle: "Manage College",
+        childlink: "managecollege",
+      },
+    ],
+  },
+
+  {
+    title: "Courses",
+    icon: "icon-mj-ballot",
+    className: "icon-mj-ballot",
+    link: "courses",
+    child: [
+      {
+        childtitle: "Add Courses",
+        childlink: "addcourses",
+      },
+      {
+        childtitle: "Manage Courses",
+        childlink: "managecourses",
+      },
+    ],
+  },
+  {
+    title: "Exams",
+    icon: "icon-mj-assignment",
+    className: "icon-mj-assignment",
+    link: "exams",
+    child: [
+      {
+        childtitle: "Add Exam",
+        childlink: "addexam",
+      },
+      {
+        childtitle: "Manage Exam",
+        childlink: "manageexam",
+      },
+    ],
+  },
+  {
+    title: "FAQ/QA",
+    className: "icon-mj-health-icon-question_circle",
+    link: "FAQ/QA",
+    child: [
+      {
+        childtitle: "Manage FAQ",
+        childlink: "manageFAQ",
+      },
+      {
+        childtitle: "Manage QA",
+        childlink: "manageQA",
+      },
+    ],
+  },
+  {
+    title: "Hospitals",
+    className: "icon-mj-local_hospital",
+    link: "hospitals",
+    child: [
+      {
+        childtitle: "Add Hospital",
+        childlink: "addhospital",
+      },
+      {
+        childtitle: "Manage Hospital",
+        childlink: "managehospital",
+      },
+    ],
+  },
+  {
+    title: "Institutes",
+    className: "icon-mj-location_city",
+    link: "institutes",
+    child: [
+      {
+        childtitle: "Add Institute",
+        childlink: "addinstitute",
+      },
+      {
+        childtitle: "Manage Institute",
+        childlink: "manageinstitute",
+      },
+    ],
+  },
+  {
+    title: "News",
+    className: "icon-mj-menu_book",
+    link: "news",
+    child: [
+      {
+        childtitle: "Add News",
+        childlink: "addnews",
+      },
+      {
+        childtitle: "Manage News",
+        childlink: "managenews",
+      },
+    ],
+  },
+  {
+    title: "Product Article",
+    className: "icon-mj-low_priority",
+    link: "productarticle",
+    child: [
+      {
+        childtitle: "Add Product Article",
+        childlink: "addproductarticle",
+      },
+      {
+        childtitle: "Manage Product Article",
+        childlink: "manageproductarticle",
+      },
+    ],
+  },
+  {
+    title: "Universities",
+    className: "icon-mj-Government_Building",
+    link: "universities",
+    child: [
+      {
+        childtitle: "Add University",
+        childlink: "adduniversity",
+      },
+      {
+        childtitle: "Manage University",
+        childlink: "manageuniversity",
+      },
+    ],
+  },
+
+  {
+    isHeadr: true,
+    title: "OTHER",
+  },
+
+  {
+    title: "Campaign",
+    className: "icon-mj-reduce_capacity",
+    link: "campaign",
+    child: [
+      {
+        childtitle: "Add Campaign",
+        childlink: "addcampaign",
+      },
+      {
+        childtitle: "Manage Campaign",
+        childlink: "managecampaign",
+      },
+    ],
+  },
+
+  {
+    title: "Manage Community",
+    className: "icon-mj-vpn_lock",
+    link: "managecommunity",
+    child: [
+      {
+        childtitle: "User",
+        childlink: "user",
+      },
+      {
+        childtitle: "Network",
+        childlink: "network",
+      },
+      {
+        childtitle: "Feed",
+        childlink: "feed",
+      },
+    ],
+  },
+  {
+    title: "Manage Comments",
+    className: " icon-mj-insert_comment",
+    link: "managecomments",
+    child: [
+      {
+        childtitle: "Certification Courses",
+        childlink: "cerificationcourse",
+      },
+      {
+        childtitle: "Colleges",
+        childlink: "colleges",
+      },
+      {
+        childtitle: "Course",
+        childlink: "course",
+      },
+      {
+        childtitle: "Doctors",
+        childlink: "doctors",
+      },
+      {
+        childtitle: "Exams",
+        childlink: "exam",
+      },
+      {
+        childtitle: "Hospitals",
+        childlink: "hospitals",
+      },
+      {
+        childtitle: "News",
+        childlink: "news",
+      },
+    ],
+  },
+
+  {
+    title: "Manage Reviews",
+    className: "icon-mj-vpn_lock",
+    link: "managecommunity",
+    child: [
+      {
+        childtitle: "Certification Courses",
+        childlink: "certificationcourse",
+      },
+      {
+        childtitle: "Colleges",
+        childlink: "colleges",
+      },
+      {
+        childtitle: "Doctors",
+        childlink: "doctors",
+      },
+      {
+        childtitle: "Hospitals",
+        childlink: "hospitals",
+      },
+    ],
+  },
+
+  {
+    title: "Question Bank",
+    className: "icon-mj-low_priority",
+    link: "managecommunity",
+    child: [
+      {
+        childtitle: "Add Question Bank",
+        childlink: "addquestionbank",
+      },
+      {
+        childtitle: "Manage Question Bank",
+        childlink: "managequestionbank",
+      },
+    ],
+  },
+
+  {
+    title: "Mock Test",
+    className: "icon-mj-edit_road",
+    link: "mocktest",
+    child: [
+      {
+        childtitle: "Add Mock Test",
+        childlink: "addmocktest",
+      },
+      {
+        childtitle: "Manage Mock Test",
+        childlink: "managemocktest",
+      },
+    ],
+  },
+
+  {
+    title: "Study Abroad",
+    className: "icon-mj-flight_takeoff",
+    link: "studyabroad",
+    child: [
+      {
+        childtitle: "Add Study Abroad",
+        childlink: "addqstudyabroad",
+      },
+      {
+        childtitle: "Manage Study Abroad",
+        childlink: "managestudyabroad",
+      },
+    ],
+  },
+
+  {
+    title: "User",
+    className: "icon-mj-supervisor_account",
+    link: "user",
+    child: [
+      {
+        childtitle: "Add User",
+        childlink: "adduser",
+      },
+      {
+        childtitle: "Manage User",
+        childlink: "manageuser",
+      },
+    ],
+  },
+
   {
     isHeadr: true,
     title: "apps",

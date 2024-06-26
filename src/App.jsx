@@ -102,6 +102,7 @@ const StatisticWidget = lazy(() => import("./pages/widget/statistic-widget"));
 const TodoPage = lazy(() => import("./pages/app/todo"));
 const EmailPage = lazy(() => import("./pages/app/email"));
 const ChatPage = lazy(() => import("./pages/app/chat"));
+const CollegePage = lazy(() => import("./pages/components/college"));
 const ProjectPostPage = lazy(() => import("./pages/app/projects"));
 const ProjectDetailsPage = lazy(() =>
   import("./pages/app/projects/project-details")
@@ -113,6 +114,26 @@ const CalenderPage = lazy(() => import("./pages/app/calendar"));
 //Ecommerce-Pages
 
 const EcommercePage = lazy(() => import("./pages/ecommerce"));
+
+
+const AddExam = lazy(() => import("./pages/exams/AdddExam"));
+const ManageExam = lazy(() => import("./pages/exams/ManageExam"));
+const AddHospital = lazy(() => import("./pages/hospital/AddHospital"));
+const ManageHospital = lazy(() => import("./pages/hospital/ManageHospital"));
+const AddCollege = lazy(() => import("./pages/college/AddCollege"));
+const ManageCollege = lazy(() => import("./pages/college/ManageCollege"));
+const AddCourses = lazy(() => import("./pages/courses/AddCourses"));
+const ManageCourses = lazy(() => import("./pages/courses/ManageCourses"));
+const AddInstitute = lazy(() => import("./pages/institutes/AddInstitutes"));
+const ManageInstitute = lazy(() => import("./pages/institutes/ManageInstitutes"));
+const AddNews = lazy(() => import("./pages/News/AddNews"));
+const ManageNews = lazy(() => import("./pages/News/ManageNews"));
+const AddUniversity = lazy(() => import("./pages/University/AddUniversity"));
+const ManageUniversity = lazy(() => import("./pages/University/Manageuniversity"));
+const ManageFAQ = lazy(() => import("./pages/FAQ&QA/ManageFAQ"));
+const AddProductArticle = lazy(() => import("./pages/Product Article/AddArticle"));
+const ManageProductArticle = lazy(() => import("./pages/Product Article/ManageArticle"));
+
 
 import Loading from "@/components/Loading";
 import { ProductDetails } from "./pages/ecommerce/productDetails";
@@ -155,6 +176,7 @@ function App() {
           <Route path="todo" element={<TodoPage />} />
           <Route path="email" element={<EmailPage />} />
           <Route path="chat" element={<ChatPage />} />
+          <Route path="College" element={<CollegePage />} />
           <Route path="projects" element={<ProjectPostPage />} />
           <Route path={"projects/:id"} element={<ProjectDetailsPage />} />
           <Route path="project-details" element={<ProjectDetailsPage />} />
@@ -226,6 +248,26 @@ function App() {
           <Route path="customers" element={<Customers />} />
           <Route path="sellers" element={<Sellers />} />
           <Route path="invoice-ecommerce" element={<InvoiceEPage />} />
+
+          <Route path="addexam" element={<AddExam />} />
+          <Route path="manageexam" element={<ManageExam />} />
+          <Route path="addhospital" element={<AddHospital />} />
+          <Route path="managehospital" element={<ManageHospital />} />
+          <Route path="addcollege" element={<AddCollege />} />
+          <Route path="managecollege" element={<ManageCollege />} />
+          <Route path="addcourses" element={<AddCourses />} />
+          <Route path="managecourses" element={<ManageCourses />} />
+          <Route path="manageFAQ" element={<ManageFAQ />} />
+          {/* <Route path="manageQA" element={<ManageQA/>} /> */}
+          <Route path="addinstitute" element={<AddInstitute />} />
+          <Route path="manageinstitute" element={<ManageInstitute />} />
+          <Route path="addnews" element={<AddNews />} />
+          <Route path="managenews" element={<ManageNews />} />
+          <Route path="addproductarticle" element={<AddProductArticle />} />
+          <Route path="manageproductarticle" element={<ManageProductArticle />} />
+          <Route path="adduniversity" element={<AddUniversity />} />
+          <Route path="manageuniversity" element={<ManageUniversity />} />
+
 
           <Route path="*" element={<Navigate to="/404" />} />
         </Route>
